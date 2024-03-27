@@ -1,3 +1,5 @@
 # Nav
-[Alacritty](https://github.com/strictKraken/dots/blob/main/alacritty/alacritty.toml)
-[Tmux](https://github.com/strictKraken/dots/blob/main/tmux/tmux.conf)
+- [Alacritty](./alacritty/alacritty.toml)
+- [Tmux](./tmux/tmux.conf)
+- [Git](./git/.gitconfig)
+- [iTerm2 profile](./iterm2/StrictKraken.json)
