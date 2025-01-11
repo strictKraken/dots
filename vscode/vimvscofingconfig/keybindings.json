@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+c ctrl+i",
+    "command": "github.copilot.terminal.suggestCommand",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-github.copilot.terminal.suggestCommand",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorTextFocus"
+  }
+]

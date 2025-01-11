@@ -1,0 +1,260 @@
+{
+  // Global editor settings
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "JetBraings",
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": "'zero','calt','ss01','ss03','ss05','ss02'",
+  "files.associations": {
+    "*.html": "html",
+    "*.js6": "javascript",
+    "*.js": "javascript",
+  },
+  //New UI settings
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "zenMode.hideLineNumbers": false,
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": [
+    "consts",
+    "tonconnect",
+    "tonproof",
+    "tonweb"
+  ],
+  // Menubar Visibility (VSCODE) ],
+  "window.menuBarVisibility": "toggle",
+  "window.density.editorTabHeight": "compact",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rsp-ui.enableStartServerOnActivation": [
+    {
+      "id": "redhat.vscode-community-server-connector",
+      "name": "Community Server Connector",
+      "startOnActivation": true
+    }
+  ],
+  "eslint.debug": true,
+  "eslint.workingDirectories": [
+    {
+      "directory": "."
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "accessibility.verbosity.inlineChat": false,
+  // "gitlens.currentLine.enabled": false,
+  // "gitlens.codeLens.enabled": false,
+  // Global Jest
+  "jest.runMode": "on-demand",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "java": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.colorTheme": "GitHub Dark Default",
+  // Отступ при скролле в файле
+  "editor.cursorSurroundingLines": 10,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Explorer
+  "explorer.compactFolders": true,
+  // Vim settings
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {},
+  // To improve performance"
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":tabp"
+      ]
+    },
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":tabnext"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.showAllEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "f"
+      ],
+      "commands": [
+        "editor.action.autoFix"
+      ]
+    },
+    {
+      "before": [
+        "<S-k>"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "<S-j>"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "<S-k>"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative",
+  "go.toolsManagement.autoUpdate": true,
+  "svelte.enable-ts-plugin": true
+}
