@@ -254,6 +254,19 @@
       ]
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "p",
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    }
+  ],
   "editor.lineNumbers": "relative",
   "go.toolsManagement.autoUpdate": true,
   "svelte.enable-ts-plugin": true
