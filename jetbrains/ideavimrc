@@ -1,0 +1,93 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" Show a few lines of context around the cursor
+set scrolloff=10
+" Do incremental searching.
+set incsearch
+set smartcase
+set ignorecase
+set hlsearch
+set number relativenumber
+
+"set nrformats-=octal
+set clipboard=unnamed,unnamedplus
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+" use project tree vim like hjkl
+set nerdtree
+"
+set which-key
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+set showmode
+set showcmd
+set visualbell
+
+set easymotion
+set notimeout
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" Put without yank
+xnoremap p P
+xnoremap P p
+" Navigate back/forward
+" nmap <BS> <Action>(Back)
+" nmap <S-BS> <Action>(Forward)
+" Popup navigation
+" inoremap <c-j> <Action>(EditorDown)
+" inoremap <c-k> <Action>(EditorUp)
+noremap <leader>w <Esc>:w<cr><Space>
+" inoremap jk <Esc>
+" Open NERDTree (use q to exit)
+map <leader>x :NERDTreeToggle<CR>
+
+noremap <Space> <Nop>
+" let mapleader ="\<Space>"
+let mapleader = " "
+
+
+" let g:WhichKeyDesc_fullscreen = "<leader>df Toggle full screen"
+
+map <leader>c <action>(CommentByLineComment)
+
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fc <action>(FindInPath)
+map <leader>fl <action>(RecentLocations)
+
+map <leader>q <action>(CloseContent)
+
+
+
+nmap gh <Action>(ShowHoverInfo)
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+nmap / :action Find<CR>
+nmap n :action FindNext<CR>
+
+" change in future
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gf <Action>(Back) " find faster way
+nmap <leader>gb <Action>(Forward) "find faster way
