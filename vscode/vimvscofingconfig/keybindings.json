@@ -1,25 +1,18 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
+  // handle <C-d><C-u> because native neovim plugin can't move cursor when scroll a half of window
   {
-    "key": "ctrl+shift+e",
-    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
+    "key": "ctrl+d",
+    "command": "vscode-neovim.send",
+    "args": "<c-d>",
+    "when": "editorTextFocus && neovim.init"
   },
   {
-    "key": "ctrl+c ctrl+i",
-    "command": "github.copilot.terminal.suggestCommand",
-    "when": "terminalFocus"
+    "key": "ctrl+u",
+    "command": "vscode-neovim.send",
+    "args": "<c-u>",
+    "when": "editorTextFocus && neovim.init"
   },
-  {
-    "key": "ctrl+i",
-    "command": "-github.copilot.terminal.suggestCommand",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "-inlineChat.start",
-    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
-  },
+  // Use escape for focus to active editor group
   {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
