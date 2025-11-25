@@ -1,1 +1,24 @@
-theme="bureau"
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="bureau"
+
+CASE_SENSITIVE='false'
+
+HIST_STAMPS="dd.mm.yyyy"
+
+plugins=(git)
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+export FZF_DEFAULT_OPTS="
+--style full
+--preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'
+"
+
+source $ZSH/oh-my-zsh.sh
+
+# git
+## turn off ghostscript and set git status
+alias gs='git status'
+
+
